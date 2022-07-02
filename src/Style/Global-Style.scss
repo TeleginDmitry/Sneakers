@@ -1,0 +1,46 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: #E7F6FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+input {
+    cursor: pointer;
+}
+
+h1, p, span, div {
+    cursor: default;
+}
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contain {
+    width: 1500px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    
+    
+}
+
+.page {
+    padding: 45px 60px;
+}
+
+@media (max-width: 610px) {
+    .page {
+        padding: 45px 10px;
+    }
+    .header__img img {
+        display: none;
+    }
+    .header__sneakers {
+        margin: 0px;
+    }
+}

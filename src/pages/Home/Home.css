@@ -1,0 +1,11 @@
+.sneakers {
+    
+}
+.sneakers__block {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.sneakers__title {
+    font-size: 32px;
+}

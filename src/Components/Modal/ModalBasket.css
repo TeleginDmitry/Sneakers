@@ -1,0 +1,123 @@
+.modal {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0, .8);
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+}
+
+.modal__active {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.modal__content {
+    width: 440px;
+    padding: 30px;
+    background-color: #ffffff;
+    height: 100%;
+    overflow: auto;
+    
+}
+.modal__title {
+    margin-bottom: 35px;
+}
+
+.modal__emptiness {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 200px);
+    
+}
+.modal__modal__emptiness_img  {
+    margin-bottom: 10px;
+}
+.modal__emptiness h1 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.modal__emptiness p {
+    max-width: 300px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 17px;
+    color: rgb(0, 0, 0, .6);
+    margin-bottom: 50px;
+}
+
+.modal__wrapper {
+    height: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.modal__list {
+    overflow: auto;
+}
+.modal__result {
+    
+    
+}
+.modal__total {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.modal__total p {
+    display: block;
+}
+
+.modal__total .line{
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #111;
+    align-self: flex-end;
+    margin: 0 10px;
+}
+
+.modal__total .modal__money{
+    width: 50%;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+
+.modal__tax {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.modal__tax p {
+    display: block;
+    width: 33%;
+}
+
+.modal__tax .line{
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #111;
+    align-self: flex-end;
+    margin: 0 10px;
+}
+
+.modal__tax .modal__money{
+    width: 40%;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+
+
+
+

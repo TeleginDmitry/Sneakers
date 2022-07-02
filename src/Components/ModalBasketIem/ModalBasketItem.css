@@ -1,0 +1,57 @@
+.basket {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+.sneaker__basket_item{
+    border-radius: 20px;
+    height: 140px;
+    border: 2px solid #F3F3F3;
+    margin-bottom: 20px;
+    flex: 1 1 325px;
+    display: flex;
+    align-self: center;
+    padding: 0 20px;
+    
+}
+
+.sneaker__basket_sneaker{
+    
+}
+.sneaker__basket_sneaker img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.sneaker__basket_description{
+    font-size: 17px;
+    font-weight: 400;
+    align-self: center;
+    margin-left: 20px;
+}
+.sneaker__basket_description p {
+    margin-bottom: 5px;
+}
+
+
+.sneaker__basket_price span {
+    font-weight: 700;
+    font-size: 16px;
+}
+.sneaker__basket_close {
+    width: 55px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #DBDBDB;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.sneaker__basket_close img {
+    width: 13px;
+    height: 13px;
+}

@@ -1,0 +1,17 @@
+input {
+    width: 250px;
+    height: 45px;
+    border: 1px solid #F3F3F3;
+    border-radius: 10px;
+    padding-left: 46px;
+    background: url(/src/Img/Input/Input.jpg) 16px/20px 20px no-repeat;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all .5s;
+}
+
+input:focus {
+    background-size: 0 0;
+    padding: 0 10px;
+}
+

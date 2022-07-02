@@ -1,0 +1,18 @@
+.button {
+    width: 245px;
+    height: 55px;
+    background-color: #9DD458;
+    border-radius: 18px;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    
+}
+.button__img {
+    
+}

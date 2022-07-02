@@ -1,0 +1,78 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 128px;
+    align-items: center;
+    padding: 0 45px;
+    border-bottom: 1px solid #EAEAEA;
+}
+.header__logo {
+    display: flex;
+}
+.header__img {
+    align-self: center;
+}
+.header__img img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.header__sneakers {
+    margin-left: 16px;
+}
+.header__title {
+    font-size: 22px;
+}
+.header__shop {
+    opacity: .7;
+}
+.header__svg {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 230px;
+    align-items: center;
+}
+.header__basket {
+    display: flex;
+    align-items: center;
+}
+.header__img_basket {}
+.header__price {
+    margin-left: 10px;
+}
+.header__likes {}
+.header__profile {}
+
+.svg {
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
