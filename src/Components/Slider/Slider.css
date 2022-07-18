@@ -1,0 +1,41 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.slider__window {
+    height: 300px;
+    flex: 0 1 960px;
+    overflow: hidden;
+    position: relative;
+}
+.slider__list {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    transition: transform 1s;
+    transition-timing-function: ease;
+
+}
+.slider__item {
+    flex: 1 0 100%;
+    border-radius: 20px;
+}
+.item1{
+    background-color: black;
+}
+.item2 {
+    background-color: rgb(255, 0, 0);
+}
+.item3 {
+    background-color: rgb(63, 12, 245);
+}
+.item3 {
+    background-color: rgb(63, 12, 245);
+}
+
+
+
+

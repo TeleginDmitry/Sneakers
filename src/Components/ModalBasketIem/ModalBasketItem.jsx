@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 import './ModalBasketItem.css'
 import img from '../../Img/Icon-skin/5.jpg'
+import useLocalStorage from "../../Hooks/useLocalStorage";
 
-function ModalBasketItem({ desc, price, sneaker, removeModalSneakers, setMoney }) {
-
+function ModalBasketItem({ desc, price, sneaker, setPriceSneaker, setSneakerAddStorage, sneakerAddStorage }) {
+    
+    const deleteSneakerModal = (sneaker) => {
+        setSneakerAddStorage(sneakerAddStorage.filter((el) => el.id !== sneaker.id))
+    }
 
     return (
         <div className="basket">
@@ -17,12 +21,12 @@ function ModalBasketItem({ desc, price, sneaker, removeModalSneakers, setMoney }
                         <span>{price} руб.</span>
                     </div>
                 </div>
-                <div className="sneaker__basket_close" onClick={() => {
-                    removeModalSneakers(sneaker)
-                    setMoney((el) => el = el - sneaker.price)
+                <button className="sneaker__basket_close" onClick={() => {
+                    setPriceSneaker((money) => money -= +sneaker.price)
+                    deleteSneakerModal(sneaker)
                 }}>
                     <img src={img} alt="" />
-                </div>
+                </button>
             </div>
         </div>
     )

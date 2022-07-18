@@ -3,14 +3,23 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #E7F6FF;
 }
-
+html, body {
+    
+}
+a {
+    text-decoration: none;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 * {
     margin: 0;
     padding: 0;
     outline: none;
+    
 }
-input {
-    cursor: pointer;
+input:placeholder-shown {
+    user-select: none;
 }
 
 h1, p, span, div {
@@ -19,6 +28,7 @@ h1, p, span, div {
 #wrapper {
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 .contain {
@@ -26,11 +36,11 @@ h1, p, span, div {
     border-radius: 20px;
     background: #FFFFFF;
     
-    
 }
 
 .page {
     padding: 45px 60px;
+    
 }
 
 @media (max-width: 610px) {
@@ -42,5 +52,8 @@ h1, p, span, div {
     }
     .header__sneakers {
         margin: 0px;
+    }
+    .header {
+        padding: 0px 10px;
     }
 }

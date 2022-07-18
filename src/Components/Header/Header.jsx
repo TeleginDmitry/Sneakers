@@ -4,9 +4,10 @@ import basket from '../../Img/header-img/basket.png'
 import like from '../../Img/header-img/like.png'
 import profile from '../../Img/header-img/profile.png'
 import { Link } from "react-router-dom";
+import likeFull from '../../Img/Icon-skin/3.svg'
 import './Header.css'
 
-function Header({money, setModal}) {
+function Header({priceSneaker, setModal, sneakerLikeStorage}) {
     return (
         <header className="header">
             <div className="header__logo">
@@ -24,14 +25,14 @@ function Header({money, setModal}) {
                         <img className="svg" src={basket} alt="basket" />
                     </div>
                     <div className="header__price">
-                        <p>{money} руб</p>
+                        <p>{priceSneaker} руб</p>
                     </div>
                 </div>
                 <div className="header__likes">
-                    <img className="svg" src={like} alt="like" />
+                    <Link to='/favorite'><img className="svg" src={sneakerLikeStorage.length ? likeFull : like} alt="like" /></Link>
                 </div>
                 <div className="header__profile">
-                    <img className="svg" src={profile} alt="profile" />
+                    <Link to='purchases'><img className="svg" src={profile} alt="profile" /></Link>
                 </div>
             </div>
         </header>
@@ -40,3 +41,4 @@ function Header({money, setModal}) {
 
 
 export default Header
+

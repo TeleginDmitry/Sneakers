@@ -1,7 +1,7 @@
 .sneakers__list {
-    margin-top: 40px;
+    margin-top: 65px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
+    justify-content: center;
 }

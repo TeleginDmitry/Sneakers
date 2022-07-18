@@ -8,6 +8,7 @@
 }
 .header__logo {
     display: flex;
+    flex: 1 1 300px;
 }
 .header__img {
     align-self: center;
@@ -31,21 +32,28 @@
     justify-content: space-between;
     flex: 0 1 230px;
     align-items: center;
+    user-select: none;
 }
 .header__basket {
     display: flex;
     align-items: center;
 }
-.header__img_basket {}
+.header__img_basket {
+}
 .header__price {
     margin-left: 10px;
 }
-.header__likes {}
+.header__likes a img{
+    width: 21px;
+}
 .header__profile {}
 
 .svg {
     cursor: pointer;
     padding: 5px;
+}
+.svg:hover {
+    transform: scale(1.1);
 }
 
 

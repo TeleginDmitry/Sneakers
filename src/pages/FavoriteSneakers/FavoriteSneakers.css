@@ -1,0 +1,56 @@
+.favorite {
+    box-sizing: border-box;
+    height: 100%;
+    
+}
+
+
+.favorite__title {
+    font-weight: 700;
+    font-size: 32px;
+}
+.favorite__titles {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.favorite__list_sneaker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.favorite-enter {
+    opacity: 0;
+}
+
+.favorite-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.favorite-exit {
+    opacity: 1;
+}
+
+.favorite-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+.fovorite__no-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.fovorite__no-order p {
+    opacity: .6;
+}
+.fovorite__no-order a {
+    text-decoration: none;
+}

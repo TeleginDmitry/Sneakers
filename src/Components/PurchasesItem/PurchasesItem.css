@@ -1,0 +1,52 @@
+.form__submit {
+    display: flex;
+    justify-content: center;
+}
+
+.textarea__submit {
+    margin: 5px 0 10px 0;
+    width: 140px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+    transition: all .5s;
+    color: rgb(0, 0, 0, .8);
+    cursor: pointer;
+}
+.textarea__submit:hover {
+    background-color: rgb(44, 48, 51);
+    color: #fff;
+}
+
+.count {
+    position: absolute;
+    bottom: 56px;
+    right: 0px;
+}
+.form__reviews {
+    position: relative;
+}
+
+.sneaker__title {
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .3s;
+    user-select: none;
+    color: rgb(255, 147, 7);
+}
+
+.reviews {
+    margin: 5px 0 8px 0;
+}
+.review {
+    max-width: 100%;
+    margin: 7px 0;
+    word-break: break-word;
+}
+.sneaker__purchases {
+    position: absolute;
+    top: 10px;
+}
+ 

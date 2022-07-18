@@ -2,11 +2,9 @@
     border-radius: 40px;
     padding: 10px 34px 34px 34px;
     border: 2px solid #F3F3F3;
-    margin-bottom: 20px;
-    max-width: 550px;
-    flex: 1 1 210px;
+    max-width: 243px;
     gap: 20px;
-
+    align-self: start;
     
 }
 .sneaker__item_active {
@@ -19,6 +17,7 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    user-select: none;
 }
 .sneaker__description{
     font-size: 17px;
@@ -54,11 +53,16 @@
     align-items: center;
     transition: all .5s;
     cursor: pointer;
+    user-select: none;
 }
 .sneaker__add img {
     width: 20px;
     height: 20px;
     cursor: pointer;
+    user-select: none;
+}
+.sneaker__add:hover img {
+    transform: scale(1.2);
 }
 .sneaker__add_active {
     outline: none;
@@ -81,11 +85,16 @@
     top: 30px;
     left: 0;
     cursor: pointer;
+    user-select: none;
 }
 .sneaker__like img {
     width: 20px;
     height: 20px;
     cursor: pointer;
+    user-select: none;
+}
+.sneaker__like:hover img {
+    transform: scale(1.2);
 }
 .sneaker__like_active {
     outline: none;
@@ -93,9 +102,33 @@
     transition: all .5s;
 }
 
-
-
-
+.sneaker__title:hover {
+    opacity: .9;
+}
+.sneaker__reviews {
+    position: relative;
+}
+.sneaker__input {
+    min-width: 100%;
+    max-width: 100%;
+    height: 0px;
+    resize: none;
+    border: none;
+    transition-property: height, border-radius;
+    transition-duration: .5s;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    
+}
+.sneaker__input_active {
+    height: 150px;
+    border: 1px solid rgba(41, 19, 19, 0.1);
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin: 10px -10px 0px -10px;
+}
 
 
 

@@ -1,0 +1,29 @@
+.reviews__title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.reviews__body {
+    max-width: 500px;
+    margin-top: 30px;
+}
+.reviews__body p {
+    font-size: 18px;
+    word-break: break-all;
+    padding: 10px 5px;
+    border-radius: 10px;
+    transition: all .4s;
+    line-height: 21px;
+}
+.reviews__body:hover p {
+    background-color: rgba(48, 36, 218, 0.4);
+    outline: 1px solid rgb(0, 0, 0, .5);
+    color: rgb(0, 0, 0);
+}
+.reviews__body p span {
+    font-size: 19px;
+    transition: all .4s;
+}
+.reviews__body:hover p span {
+    color: #ffffff;
+}

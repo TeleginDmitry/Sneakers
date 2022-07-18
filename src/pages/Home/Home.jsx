@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SneakersList from "../../Components/SneakersList/SneakersList";
 import Input from "../../UI/Input/Input";
 import './Home.css'
-
+import Slider  from '../../Components/Slider/Slider'
 import img1 from '../../Img/Sneakers/1.jpg'
 import img2 from '../../Img/Sneakers/2.jpg'
 import img3 from '../../Img/Sneakers/3.jpg'
@@ -13,9 +13,11 @@ import img7 from '../../Img/Sneakers/7.jpg'
 import img8 from '../../Img/Sneakers/8.jpg'
 import img9 from '../../Img/Sneakers/9.jpg'
 import img10 from '../../Img/Sneakers/10.jpg'
-import { useSortedSneaker } from "../../Hooks/useSortedSneaker";
+import { useSneaker, useSortedSneaker } from "../../Hooks/useSortedSneaker";
+import useLocalStorage from "../../Hooks/useLocalStorage";
+import Select from "../../UI/Select/Select";
 
-function Home({countMoney, filterModalSneakers}) {
+function Home({addReviewsSneaker, sneakerLikeStorage, counterMoney, resetValueAddStorage, sneakerAddStorage, resetValueLikeStorage}) {
     const [sneakers, setSneakers] = useState([
         {id: 1, logo: img1, desc: 'Мужские Кроссовки Nike Blazer Mid Suede', price: '12999'},
         {id: 2, logo: img2, desc: 'Мужские Кроссовки Nike Air Max 270', price: '12999'},
@@ -30,20 +32,26 @@ function Home({countMoney, filterModalSneakers}) {
         
         
     ])
-
-
-
+    const [query, setQuery] = useState('')
     const [sorted, setSorted] = useState('')
+    const filterSneaker = useSneaker(sneakers, sorted, query)
 
-    const filterSneaker = useSortedSneaker(sneakers, sorted)
+
+    
     return (
+        
         <div className="sneakers">
+            
             <div className="sneakers__block">
                 <h1 className="sneakers__title">Все кроссовки</h1>
-                <Input onChange={(input) => setSorted(input.target.value)} placeholder='Поиск...'></Input>
+                <Select value={query} onChange={(el) => setQuery(el)}  options={[
+                { value: 'price', name: 'Цене' },
+                { value: 'desc', name: 'Описанию'},
+            ]}></Select>
+                <Input value={sorted} onChange={(input) => setSorted(input.target.value)} placeholder='Поиск...'></Input>
             </div>
             <div className="sneakers__shop">
-                <SneakersList filterModalSneakers={filterModalSneakers} countMoney={countMoney} sneakers={filterSneaker} setSneakers={setSneakers}></SneakersList>
+                <SneakersList addReviewsSneaker={addReviewsSneaker} sneakerLikeStorage={sneakerLikeStorage} resetValueLikeStorage={resetValueLikeStorage} sneakerAddStorage={sneakerAddStorage} resetValueAddStorage={resetValueAddStorage} counterMoney={counterMoney} sneakers={filterSneaker} setSneakers={setSneakers}></SneakersList>
             </div>
         </div>
     )

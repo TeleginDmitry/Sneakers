@@ -8,4 +8,29 @@
 }
 .sneakers__title {
     font-size: 32px;
+    text-align: center;
+}
+
+@media (max-width: 550px) {
+    .sneakers__block {
+        flex-wrap: wrap;
+    }
+    .sneakers__title {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media (max-width: 518px) {
+    .input {
+        order: 2;
+        margin-bottom: 20px;
+    }
+    .sneakers__title {
+        order: 1;
+    }
+    .select {
+        order: 3;
+    }
 }

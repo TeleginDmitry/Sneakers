@@ -3,7 +3,7 @@ import './Input.css'
 
 function Input(props) {
     return (
-        <input {...props}></input>
+        <input className="input" {...props}></input>
     )
 }
 

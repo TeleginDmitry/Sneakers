@@ -1,0 +1,12 @@
+.select {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid rgb(252, 101, 0);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+.option {
+}
+
